@@ -1,0 +1,32 @@
+.user {
+  text-align: center;
+}
+
+#profile {
+  width: 50%;
+  float: left;
+}
+
+#work {
+  width: 50%;
+
+}
+
+.work-list {
+  list-style-type: none;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.work-list li {
+  text-align: center;
+  padding: 10px;
+  overflow: auto;
+}
+
+.work-list li:hover {
+  transition: 0.3s;
+  background: #99ddcc;
+  color: #141414;
+  cursor: pointer;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/users.css">
+    <link rel="stylesheet" type="text/css" href="css/media_queries.css">
+    <link rel="icon" href="img/freelancetree_icon.png">
+    <title>Freelance Tree</title>
+</head>
+<body>
+    <nav class="menu" id="navbar">
+        <a href="javascript:logOut()">Logout</a>
+        <a href="freelancer.html">Personal Area</a>
+        <div class="submenu">
+            <button class="submenubtn">Categories &darr;</button>
+            <nav class="submenu-items" id="subnav">
+                <a href="categorias/digital_marketing.html">Digital Marketing</a>
+                <a href="categorias/graphics_design.html">Graphics & Design</a>
+                <a href="categorias/music_audio.html">Music & Audio </a>
+                <a href="categorias/video_animation.html">Video & Animation</a>
+                <a href="categorias/writing.html">Writing</a>
+                <a href="categorias/programming_tech.html">Programming & Tech</a>
+                <a href="categorias/business.html">Business</a>
+                <a href="categorias/data.html">Data</a>
+            </nav>
+        </div>
+        <a href="index.html">Home</a>
+    </nav>
+    <header>
+        <h1>Freelance Tree</h1>
+    </header>
+    <main>
+        <section class="user">
+            <h2>Client</h2>
+            <div id="profile">
+                <h3 id="client-name">
+                    <script>
+                        let acc = [];
+                        for (let i = 1; i <= localStorage.length; i++) {
+                            acc.push(JSON.parse(localStorage.getItem(i)));
+                        }
+                        for (let k = 0; k < acc.length; k++) {
+                            if (acc[k][1] == sessionStorage.getItem("currentLogin")) {
+                                document.getElementById("client-name").innerText = acc[k][0];
+                            }
+                        }
+                    </script>
+                </h3>
+                <p id="email">
+                    <script>document.getElementById("email").innerText = sessionStorage.getItem("currentLogin");</script>
+                </p>
+            </div>
+            <div id="work">
+                <h3>Jobs</h3>
+                <button class="button" onclick="createOffer();">Create Offer</button>
+                <ul class="work-list" id="offers">
+                    <script>
+                        let accounts = [];
+                        let offers = [];
+                        for (let i = 1; i <= localStorage.length; i++) {
+                            accounts.push(JSON.parse(localStorage.getItem(i)));
+                        }
+                        for (let k = 0; k < accounts.length; k++) {
+                            if (accounts[k][1] == sessionStorage.getItem("currentLogin")) {
+                                for (let m = 0; m < accounts[k][4].length; m++) {
+                                    offers.push(accounts[k][4][m]);
+                                }
+                            }
+                        }
+                        offers.forEach(([title, description, category]) => {
+                            let listItem = document.createElement("li");
+                            let offerDescription = document.createElement("h4");
+                            let offerCategory = document.createElement("p");
+                            offerDescription.innerText = description;
+                            offerCategory.innerText = "Categoria: " + category;
+                            listItem.appendChild(offerDescription);
+                            listItem.appendChild(offerCategory);
+                            document.getElementById("offers").appendChild(listItem);
+                        });
+                    </script>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 | Freelance Tree</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>

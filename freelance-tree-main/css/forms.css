@@ -1,0 +1,36 @@
+.form {
+  text-align: center;
+  margin: 50px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 15px;
+  color: #141414;
+  min-width: 50px;
+  text-align: center;
+}
+
+.textbox {
+  width: 70%;
+  padding: 15px;
+  border: 1px solid #99ddcc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.user-type {
+  padding: 10px;
+}
+
+.account-question {
+  margin: 10px;
+}

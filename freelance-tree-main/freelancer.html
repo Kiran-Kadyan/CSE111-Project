@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/freelancer.css">
+    <link rel="stylesheet" type="text/css" href="css/media_queries.css">
+    <link rel="icon" href="img/freelancetree_icon.png">
+    <title>Freelance Tree - Freelancer</title>
+</head>
+<body>
+    <nav class="menu" id="navbar">
+        <a href="javascript:logOut()">Logout</a>
+        <a href="freelancer.html">Personal Area</a>
+        <div class="submenu">
+            <button class="submenubtn">Categories &darr;</button>
+            <nav class="submenu-items" id="subnav">
+                <a href="categorias/digital_marketing.html">Digital Marketing</a>
+                <a href="categorias/graphics_design.html">Graphics & Design</a>
+                <a href="categorias/music_audio.html">Music & Audio </a>
+                <a href="categorias/video_animation.html">Video & Animation</a>
+                <a href="categorias/writing.html">Writing</a>
+                <a href="categorias/programming_tech.html">Programming & Tech</a>
+                <a href="categorias/business.html">Business</a>
+                <a href="categorias/data.html">Data</a>
+            </nav>
+        </div>
+        <a href="index.html">Home</a>
+    </nav>
+    <header>
+        <h1>Freelance Tree</h1>
+        <h2>Freelancer</h2>
+    </header>
+    <main>
+        <div class="max-width-container">
+            <nav class="left-navbar">
+                <div class="mobile-overlay"></div>
+                <div class="sticky-content">
+                    <h5>Choose your Category:</h5>
+                    <ul class="categorias">
+                        <li>
+                            <a href="categorias/data.html">Data</a>
+                        </li>
+                        <li>
+                            <a href="categorias/business.html">Business</a>
+                        </li>
+                        <li>
+                            <a href="categorias/programming_tech.html">Programming & Tech</a>
+                        </li>
+                        <li>
+                            <a href="categorias/writing.html">Writing </a>
+                        </li>
+                        <li>
+                            <a href="categorias/video_animation.html">Video & Animation</a>
+                        </li>
+                        <li>
+                            <a href="categorias/music_audio.html">Music & Audio</a>
+                        </li>
+                        <li>
+                            <a href="categorias/graphics_design.html">Graphics & Design</a>
+                        </li>
+                        <li>
+                            <a href="categorias/digital_marketing.html">Digital Marketing</a>
+                        </li>
+                    </ul>
+                    <h5>Management</h5>
+                    <div>
+                        <ul class="top-articles">
+                            <li>
+                                <a href="projects.html">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-body undefined">
+                <div class="main-page">
+                    <h3> Business, Marketing & Branding</h3>
+                    <div class="rich-text">
+                        <h2>
+                            <span> Everything you need to grow your business</span>
+                        </h2>
+                        <p>
+                            <span> Practical online resources covering everything you need to know about digital marketing, video
+                                animation, writing and editing, programming and technology, graphics and design, and much more.</span>
+                                
+                        </p>
+                    </div>
+                    <div class="articles">
+                        <div>
+                            <a href="javascript:openInfo('data')" class="media-wrapper">Data</a>
+                            <img src="https://dataguide.com.br/wp-content/uploads/2021/05/lock-icon-whilst-man-is-using-mouse.jpg-1024x572.png"
+                                alt="Data">
+                            <div id="data" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('data')">&times;</span>
+                                        <h2>Data</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>In the connected world we live in, Data is highly important.</p>
+                                        <p>Working with Data involves analytical and organizational skills to make them easier to study.</p>
+                                        <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:openInfo('business')" class="media-wrapper">Business</a>
+                            <img src="https://www.buildabusiness.africa/images/Sub-Pages-Guides.jpg" alt="Business">
+                            <div id="business" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('business')">&times;</span>
+                                        <h2>Business</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Business is essential for the normal functioning of companies.</p>
+                                        <p>You can be a professional in this area and offer your services to companies looking for them.</p>
+                                        <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:openInfo('tech')" class="media-wrapper">Programming & Tech</a>
+                            <img src="data:image/png;base64,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"
+                                alt="Programação e Tecnologia">
+                            <div id="tech" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('tech')">&times;</span>
+                                        <h2>Programming & Tech</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Technology is an always-evolving field.</p>
+                    <p>To be successful, it's necessary to keep up with the latest news and trends in the tech world.</p>
+                    <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:openInfo('writing')" class="media-wrapper">Writing</a>
+                            <img src="https://neilpatel.com/wp-content/uploads/2021/02/copywriting-guide-.png"
+                                alt="Escrita e Redação">
+                            <div id="writing" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('writing')">&times;</span>
+                                        <h2>Writing</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Having good content is important for growing a business.</p>
+                                        <p>For this, the help of a good writer is necessary because the content will be adjusted to
+                                            achieve the desired result.</p>
+                                            <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:openInfo('video')" class="media-wrapper">Video & Animation</a>
+                            <img src="https://visme.co/blog/wp-content/uploads/2021/12/How-to-Make-a-YouTube-Video-Thumbnail-500x280.jpg"
+                                alt="Vídeo e Animação">
+                            <div id="video" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('video')">&times;</span>
+                                        <h2>Video & Animation</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Media is consumed by people all over the world (movies, series, ...).</p>
+                                        <p>Professionals in the field of Video and Animation make these contents possible.</p>
+                                        <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:openInfo('music')" class="media-wrapper">Music & Audio</a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Louvre_Audio_tour_for_Korean.jpg/440px-Louvre_Audio_tour_for_Korean.jpg"
+                                alt="Música e Áudio">
+                            <div id="music" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('music')">&times;</span>
+                                        <h2>Music & Audio</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Sometimes artists need the help of individuals with technical skills in sound.</p>
+                                        <p>If you are one of these individuals, you may have the opportunity to work with them.</p>
+                                        <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:openInfo('graphics')" class="media-wrapper">Grpahics & Design</a>
+                            <img src="https://josephmuciraexclusives.com/wp-content/uploads/2020/08/How-to-Design-Ad-Graphics.jpg"
+                                alt="Grpahics & Design">
+                            <div id="graphics" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('graphics')">&times;</span>
+                                        <h2>Grpahics & Design</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Graphics are a part of the media content we consume daily.</p>
+                                        <p>If you work with graphics and design, you can have your content featured in the media.</p>
+                                        <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:openInfo('marketing')" class="media-wrapper">Digital Marketing</a>
+                            <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2021/08/the-ultimate-guide-to-digital-marketing-61726311bf393-sej-1280x720.png"
+                                alt="Digital Marketing">
+                            <div id="marketing" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close" onclick="closeInfo('marketing')">&times;</span>
+                                        <h2>Digital Marketing</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Currently, we live in a more digital world.</p>
+                                        <p>Through digital means, it is possible to market products, and thus people are needed to explore this area.</p>
+                                        <button class="hire-button" onclick="hireFreelancer()">Hire Someone</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 | Freelance Tree</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

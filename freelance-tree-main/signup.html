@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/media_queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/freelancetree_icon.png">
+    <title>Freelance Tree - Register</title>
+</head>
+<body>
+    <nav class="menu" id="navbar">
+        <a href="javascript:logOut()">Logout</a>
+        <a href="freelancer.html">Personal Area</a>
+        <div class="submenu">
+            <button class="submenubtn">Categories &darr;</button>
+            <nav class="submenu-items" id="subnav">
+                <a href="categorias/digital_marketing.html">Digital Marketing</a>
+                <a href="categorias/graphics_design.html">Graphics & Design</a>
+                <a href="categorias/music_audio.html">Music & Audio </a>
+                <a href="categorias/video_animation.html">Video & Animation</a>
+                <a href="categorias/writing.html">Writing</a>
+                <a href="categorias/programming_tech.html">Programming & Tech</a>
+                <a href="categorias/business.html">Business</a>
+                <a href="categorias/data.html">Data</a>
+            </nav>
+        </div>
+        <a href="index.html">Home</a>
+    </nav>
+    <header>
+        <h1>Freelance Tree</h1>
+        <h2>Register</h2>
+    </header>
+    <main>
+        <section class="form">
+            <h3>Register Here</h3>
+            <form method="post" action="javascript:signUp()">
+                <div class="input-icons">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" id="signup-name" name="name" placeholder="Name" class="textbox" required>
+                </div>
+                <div class="input-icons">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" id="signup-email" name="email" placeholder="Email" class="textbox" required>
+                </div>
+                <div class="input-icons">
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" id="signup-password" name="password" placeholder="Password" class="textbox"
+                        required>
+                </div>
+                <div class="user-type">
+                    <input type="radio" id="client" name="user-type" value="client" required>Client
+                    <input type="radio" id="freelancer" name="user-type" value="freelancer" required>Freelancer
+                </div>
+                <input type="submit" value="Register" class="button">
+                <div class="account-question">
+                    <a href="login.html">Already have an account?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 | Freelance Tree</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

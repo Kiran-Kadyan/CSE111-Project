@@ -1,0 +1,89 @@
+/*---------------------------------------
+      MOBILE DEVICES              
+  -----------------------------------------*/
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.5em;
+  }
+
+  header {
+    padding-top: 120px;
+  }
+
+  .menu a {
+    float: none;
+    width: 100%;
+  }
+
+  .submenu {
+    float: none;
+    width: 100%;
+  }
+
+  #about {
+    margin: 10px;
+  }
+
+  .image-text {
+    display: block;
+  }
+
+  .image-text > img {
+    width: 100%;
+  }
+
+  .image-text .text {
+    padding: 0;
+  }
+
+  .max-width-container {
+    padding-top: 80px;
+    padding-bottom: 0;
+    display: block;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 32px 64px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #profile {
+    width: 100%;
+  }
+
+  #work {
+    width: 100%;
+  }
+}
+
+/*---------------------------------------
+      TABLETS & iPADS              
+  -----------------------------------------*/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.7em;
+  }
+
+  .work-list {
+    margin-left: 10%;
+  }
+}
+
+/*---------------------------------------
+      DESKTOPS & LARGE SCREENS              
+  -----------------------------------------*/
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+
+/*---------------------------------------
+      TV'S & EXTRA-LARGE SCREENS             
+  -----------------------------------------*/
+@media screen and (min-width: 1201px) {
+  body {
+    font-size: 1em;
+  }
+}
